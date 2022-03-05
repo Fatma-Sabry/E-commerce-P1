@@ -1,0 +1,25 @@
+﻿@model E_Commerce.BLL.Model.ProductVM
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<form asp-controller="Product" asp-action="Delete">
+<input type="hidden" asp-for="ID" class="form-control" readonly>
+<br>
+<input type="text" asp-for="Name" class="form-control" readonly>
+<br>
+<input type="text" asp-for="Price" class="form-control" readonly>
+<br>
+<input type="text" asp-for="Color" class="form-control" readonly>
+<br>
+<input type="text" asp-for="Quantity" class="form-control" readonly>
+<br>
+<input type="text" asp-for="Size" class="form-control" readonly>
+<br>
+<input type="text" asp-for="ProductUser" class="form-control" readonly>
+<br>
+<input type="text" asp-for="Describtion" class="form-control" readonly>
+<br>
+    <input type="submit" value="Delete" class="btn btn-primary">
+</form>

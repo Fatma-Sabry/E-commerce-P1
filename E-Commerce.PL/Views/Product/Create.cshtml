@@ -1,0 +1,68 @@
+﻿@model E_Commerce.BLL.Model.ProductVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<form  asp-controller="Product" asp-action="Create">
+    <div class="form-group row">
+        <label asp-for="Name" class="col-sm-12 col-md-2 col-form-label">Name</label>
+        <div class="col-sm-12 col-md-10 ">
+            <input type="text" asp-for="Name" class="form-control">
+            <span asp-validation-for="Name" class="alert-danger"></span>
+        </div>
+    </div>
+        <div class="form-group row">
+            <label asp-for="Price" class="col-sm-12 col-md-2 col-form-label">Price</label>
+            <div class="col-sm-12 col-md-10 ">
+                <input type="number" asp-for="Price" class="form-control">
+                <span asp-validation-for="Price" class="alert-danger"></span>
+            </div>
+
+        </div>  
+        <div class="form-group row">
+
+            <label asp-for="Color" class="col-sm-12 col-md-2 col-form-label">Color</label>
+            <div class="col-sm-12 col-md-10 ">
+                <input type="text" asp-for="Color" class="form-control">
+                <span asp-validation-for="Color" class="alert-danger"></span>
+            </div>
+        </div>   
+        <div class="form-group row">
+            <label asp-for="Size" class="col-sm-12 col-md-2 col-form-label">Size</label>
+            <div class="col-sm-12 col-md-10 ">
+                <input type="text" asp-for="Size" class="form-control">
+                <span asp-validation-for="Size" class="alert-danger"></span>
+            </div>
+        </div> 
+        <div class="form-group row">
+            <label asp-for="Quantity" class="col-sm-12 col-md-2 col-form-label">Quantity</label>
+            <div class="col-sm-12 col-md-10 ">
+                <input type="number" asp-for="Quantity" class="form-control">
+                <span asp-validation-for="Quantity" class="alert-danger"></span>
+            </div>
+
+        </div>  
+        <div class="form-group row">
+
+            <label asp-for="ProductUser" class="col-sm-12 col-md-2 col-form-label">ProductUser</label>
+            <div class="col-sm-12 col-md-10 ">
+                <input type="text" asp-for="ProductUser" class="form-control">
+                <span asp-validation-for="ProductUser" class="alert-danger"></span>
+            </div>
+
+        </div>   
+        <div class="form-group row">
+            <label asp-for="Describtion" class="col-sm-12 col-md-2 col-form-label">Describtion</label>
+            <div class="col-sm-12 col-md-10 ">
+                <input type="text" asp-for="Describtion" class="form-control">
+                <span asp-validation-for="Describtion" class="alert-danger"></span>
+            </div>
+
+        </div>   
+            <input type="submit" class="btn btn-primary" value="Add">
+        
+</form>
+<script src="~/jquery/jquery.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>

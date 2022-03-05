@@ -1,0 +1,41 @@
+﻿@model E_Commerce.BLL.Model.ProductVM
+@{
+    ViewData["Title"] = "Update";
+}
+
+
+<form asp-controller="Product" asp-action="Update" class="form-group">
+    <input type="hidden" asp-for="ID">
+    <label asp-for="Name">Name</label>
+    <input type="text" asp-for="Name" class="form-control">
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br>
+    <label asp-for="Price">Price</label>
+    <input type="text" asp-for="Price" class="form-control">
+    <span asp-validation-for="Price" class="text-danger"></span>
+    <br>
+    <label asp-for="Color">Color</label>
+    <input type="text" asp-for="Color" class="form-control">
+    <span asp-validation-for="Color" class="text-danger"></span>
+    <br>
+    <label asp-for="Quantity">Quantity</label>
+    <input type="text" asp-for="Quantity" class="form-control">
+    <span asp-validation-for="Quantity" class="text-danger"></span>
+    <br>
+    <label asp-for="Size">Size</label>
+    <input type="text" asp-for="Size" class="form-control">
+    <span asp-validation-for="Size" class="text-danger"></span>
+    <br>
+    <label asp-for="ProductUser">ProductUser</label>
+    <input type="text" asp-for="ProductUser" class="form-control">
+    <span asp-validation-for="ProductUser" class="text-danger"></span>
+    <br>
+    <label asp-for="Describtion">Describtio</label>
+    <input type="text" asp-for="Describtion" class="form-control">
+    <span asp-validation-for="Describtion" class="text-danger"></span>
+    <br>
+    <input type="submit" value="Save Change" class="btn btn-primary">
+</form>
+<script src="~/jquery/jquery.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
